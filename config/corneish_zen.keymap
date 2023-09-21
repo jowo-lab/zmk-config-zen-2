@@ -9,8 +9,8 @@
   };  
 
   macros {
-    mac_bt: mac_bt {
-      label = "mac_bt";
+    win_bt: win_bt {
+      label = "win_bt";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -19,8 +19,8 @@
       ;
     };
     
-    win_bt: win_bt {
-      label = "win_bt";
+    mac_bt: mac_bt {
+      label = "mac_bt";
       compatible = "zmk,behavior-macro";
       #binding-cells = <0>;
       bindings
@@ -42,7 +42,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "WINDOWS";
+                        label = "WIN";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I  |  O  |  P  | BKSP |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -72,7 +72,7 @@
                 };
 
                 lower_layer {
-                        label = "NUMBER";
+                        label = "NUM";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |   |  6  |  7  |  8  |  9  |  0  | BKSP |
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   | LFT | DWN |  UP | RGT |     |      |
@@ -87,7 +87,7 @@
                 };
 
                 raise_layer {
-                        label = "SYMBOL";
+                        label = "SYM";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | CTRL |     |     |     |     |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
@@ -102,7 +102,7 @@
                 };
                 
                  fun_layer {
-                        label = "FUNCTION";
+                        label = "FUN";
 
                         bindings = <
     &kp F1    &kp F2 &kp F3   &kp F4   &kp F5  &kp F6 &none  &none   &none         &kp PSCRN  
